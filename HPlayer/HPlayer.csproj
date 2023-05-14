@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7591A944-D10D-4CE9-82F3-38BF3F7C7C17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HPlayer</RootNamespace>
+    <AssemblyName>HPlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HPlayer.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Source\MyIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C7159727ABFB7873CB83BC75E2AB9F5A0C8996F2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HPlayer_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bass.Net, Version=2.4.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bass.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Hotkey_Block.xaml.cs">
+      <DependentUpon>Hotkey_Block.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OBS_Controls\Plugin_Item.xaml.cs">
+      <DependentUpon>Plugin_Item.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SpectrumAnalyze.xaml.cs">
+      <DependentUpon>SpectrumAnalyze.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Stream_Output_Block.xaml.cs">
+      <DependentUpon>Stream_Output_Block.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Library_Manager\Connection.cs" />
+    <Compile Include="Library_Manager\Procotol.cs" />
+    <Compile Include="Library_Manager\Tcp_Library.cs" />
+    <Compile Include="Library_Manager\YFH_Timer.cs" />
+    <Compile Include="Library_Manager\YouTube_Decoder.cs" />
+    <Compile Include="Controls\List_Controls\View_List.xaml.cs">
+      <DependentUpon>View_List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin_Manager\Plugin_Event_Trigger.cs" />
+    <Compile Include="Plugin_Manager\Plugin_Manager.cs" />
+    <Compile Include="UI\ChatRoom.xaml.cs">
+      <DependentUpon>ChatRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IconProgress.xaml.cs">
+      <DependentUpon>IconProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Information.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="Controls\Online_Controls\OnlineItem.xaml.cs">
+      <DependentUpon>OnlineItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Online_Controls\OnlineRight.xaml.cs">
+      <DependentUpon>OnlineRight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\List_Controls\PlayerList.xaml.cs">
+      <DependentUpon>PlayerList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlayerScrollBar.xaml.cs">
+      <DependentUpon>PlayerScrollBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\List_Controls\PlayerListItem.xaml.cs">
+      <DependentUpon>PlayerListItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Member\Member_Register.xaml.cs">
+      <DependentUpon>Member_Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Member\Member_Interface.xaml.cs">
+      <DependentUpon>Member_Interface.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Member\Member_Login.xaml.cs">
+      <DependentUpon>Member_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OBS_Stream_Setting.xaml.cs">
+      <DependentUpon>OBS_Stream_Setting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Setting.xaml.cs">
+      <DependentUpon>Setting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Stream_Output.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Stream_Output.Designer.cs">
+      <DependentUpon>Stream_Output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UpdateInfo.xaml.cs">
+      <DependentUpon>UpdateInfo.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\Hotkey_Block.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\OBS_Controls\Plugin_Item.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SpectrumAnalyze.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Stream_Output_Block.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\List_Controls\View_List.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ChatRoom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\IconProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Online_Controls\OnlineItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Online_Controls\OnlineRight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Member\Member_Register.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Member\Member_Interface.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Member\Member_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\OBS_Stream_Setting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Player.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\List_Controls\PlayerList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PlayerScrollBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\List_Controls\PlayerListItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Setting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UpdateInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library_Manager\EQ.cs" />
+    <Compile Include="Library_Manager\MyLib.cs" />
+    <Compile Include="UI\Player.xaml.cs">
+      <DependentUpon>Player.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressBar.xaml.cs">
+      <DependentUpon>ProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Stream_Output.resx">
+      <DependentUpon>Stream_Output.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Progress\v0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Volume\volume0.png" />
+    <Resource Include="Source\MyIcon.ico" />
+    <Resource Include="Source\Pause.png" />
+    <Resource Include="Source\Play.png" />
+    <Resource Include="Source\Volume\volume1.png" />
+    <Resource Include="Source\Volume\volume2.png" />
+    <Resource Include="Source\Volume\volume3.png" />
+    <Resource Include="Source\Volume\volume4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Progress\v1.png" />
+    <Resource Include="Source\Progress\v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Mode\List.png" />
+    <Resource Include="Source\Mode\Random.png" />
+    <Resource Include="Source\Mode\Single.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\favorite.png" />
+    <Resource Include="Source\Minimumsize.png" />
+    <Resource Include="Source\PowerOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\back.png" />
+    <Resource Include="Source\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 與 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\SearchResult.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Member.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HPlayer_Plugin_Interface\HPlayer_Plugin_Interface.csproj">
+      <Project>{415A43D4-AF1F-4E72-9B28-5337DDF8B51F}</Project>
+      <Name>HPlayer_Plugin_Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

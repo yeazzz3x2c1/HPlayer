@@ -1,0 +1,12 @@
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Interface\bin\Debug\HPlayer_Plugin_Interface.dll
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Interface\bin\Debug\HPlayer_Plugin_Interface.pdb
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.csproj.CoreCompileInputs.cache
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.dll
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.pdb
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.csprojAssemblyReference.cache
+C:\Users\zzz3x\Desktop\Work\HPlayer\201123\HPlayer\HPlayer_Plugin_Interface\bin\Debug\HPlayer_Plugin_Interface.dll
+C:\Users\zzz3x\Desktop\Work\HPlayer\201123\HPlayer\HPlayer_Plugin_Interface\bin\Debug\HPlayer_Plugin_Interface.pdb
+C:\Users\zzz3x\Desktop\Work\HPlayer\201123\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.csprojAssemblyReference.cache
+C:\Users\zzz3x\Desktop\Work\HPlayer\201123\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.csproj.CoreCompileInputs.cache
+C:\Users\zzz3x\Desktop\Work\HPlayer\201123\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.dll
+C:\Users\zzz3x\Desktop\Work\HPlayer\201123\HPlayer\HPlayer_Plugin_Interface\obj\Debug\HPlayer_Plugin_Interface.pdb

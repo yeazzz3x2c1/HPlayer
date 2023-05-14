@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="HPlayer.PlayerListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="namespace:HPlayer"
+             mc:Ignorable="d" Height="45.298" HorizontalAlignment="Left">
+    <Grid x:Name="Main" HorizontalAlignment="Left">
+        <TextBlock x:Name="ItemNameL" Text="Song Name" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="#FFCAC9CF"/>
+    </Grid>
+</UserControl>

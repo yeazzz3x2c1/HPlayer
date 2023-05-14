@@ -1,0 +1,123 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<iostream>
+#include<stdio.h>
+#include<time.h>
+using namespace std;
+class list {
+public:
+	int operator[](int inp) { return l[inp]; }
+	int* l;
+	int count;
+	list() {
+		count = 0;
+		l = new int[0];
+	}
+	void add(int inp) {
+		int* buffer = new int[count + 1];
+		for (int i = 0; i < count; i++)
+			buffer[i] = l[i];
+		buffer[count] = inp;
+		count += 1;
+		delete[] l;
+		l = buffer;
+	}
+	void removeAt(int inp) {
+		int * buffer = new int[count - 1];
+		for (int i = 0; i < inp; i++)
+			buffer[i] = l[i];
+		for (int i = inp + 1; i < count; i++)
+			buffer[i - 1] = l[i];
+		count -= 1;
+		delete[] l;
+		l = buffer;
+	}
+};
+class al {
+public:
+	list operator[](int inp) { return l[inp]; }
+	list* l;
+	int count;
+	al() {
+		count = 0;
+		l = new list[0];
+	}
+	void add(list inp) {
+		list* buffer = new list[count + 1];
+		for (int i = 0; i < count; i++)
+			buffer[i] = l[i];
+		buffer[count] = inp;
+		count += 1;
+		delete[] l;
+		l = buffer;
+	}
+};
+list getNew() {
+	list ll = list();
+	list finall = list();
+	for (int i = 0; i < 4; i++)
+		ll.add(i);
+	for (int i = 0; i < 4; i++) {
+		int index = rand() % ll.count;
+		finall.add(ll[index]);
+		ll.removeAt(index);
+	}
+	return finall;
+}
+bool solve(al &l, al &well, int x, int y, int act) {// u 0, l 1, r2, d 3
+	if (x < 0 || y < 0 || x == l[0].count || y == l.count) return true;
+	if (l[y][x] == 0) return false;
+	l[y].l[x] = 0;
+	list rnd = getNew();
+	for (int i = 0; i < 4; i++) {
+		if (rnd[i] + act == 3) continue;
+		bool vec = rnd[i] % 3 == 0;
+		int OffsetX = vec ? 0 : rnd[i] == 1 ? -1 : 1;
+		int OffsetY = vec ? rnd[i] == 0 ? -1 : 1 : 0;
+		int finalY = y + OffsetY;
+		int finalX = x + OffsetX;
+		well[(y > finalY ? y : finalY ) * 2].l[(x > finalX ? x : finalX ) * 2] = solve(l, well, finalX, finalY, rnd[i]) ? 0 : 1;
+	}
+	return true;
+}
+int main() {
+	srand(time(NULL));
+	while (1) {
+		al l = al();
+		al well = al();
+		int x, y;
+		cout << "Input:";
+		cin >> y >> x;
+		for (int i = 0; i < y; i++) {
+			list ll = list();
+			for (int j = 0; j < x; j++)
+				ll.add(-1);
+			l.add(ll);
+		}
+		for (int i = 0; i < y * 2 + 1; i++) {
+			list ll = list();
+			for (int j = 0; j < x * 2 + 1; j++)
+				ll.add(2);
+			well.add(ll);
+		}
+		solve(l, well, 0, 0, 3);
+		//solve(l, well, 0, 0, 2);
+		for (int i = 0; i < well.count; i++) {
+			for (int j = 0; j < well[0].count; j++) {
+				//cout << well[i][j] << " ";
+				if (i == 0 || i == well.count - 1) continue;
+				if (i % 2 == 0) {
+					if (j == 0 || j == well[0].count - 1) continue;
+					cout << well[i][j] << " ";
+				}
+				else
+					if (j % 2 == 0) {
+						if (j == 0 || j == well[0].count - 1) continue;
+						cout << well[i][j] << " ";
+					}
+					else
+						cout << l[(i - 1) / 2][(j - 1) / 2] << " ";
+			}
+			cout << endl;
+		}
+	}
+}

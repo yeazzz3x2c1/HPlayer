@@ -1,0 +1,11 @@
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\bin\Debug\HPlayer_Plugin_Test.dll
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\bin\Debug\HPlayer_Plugin_Test.pdb
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\bin\Debug\HPlayer_Plugin_Interface.dll
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\bin\Debug\HPlayer_Plugin_Interface.pdb
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\obj\Debug\HPlayer_Plugin_Test.csprojAssemblyReference.cache
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\obj\Debug\HPlayer_Plugin_Test.Properties.Resources.resources
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\obj\Debug\HPlayer_Plugin_Test.csproj.GenerateResource.cache
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\obj\Debug\HPlayer_Plugin_Test.csproj.CoreCompileInputs.cache
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\obj\Debug\HPlayer_Plugin_Test.csproj.CopyComplete
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\obj\Debug\HPlayer_Plugin_Test.dll
+C:\Users\zzz3x\Desktop\Work\HPlayer\200516\HPlayer\HPlayer_Plugin_Test\obj\Debug\HPlayer_Plugin_Test.pdb

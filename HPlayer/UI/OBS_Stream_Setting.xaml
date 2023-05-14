@@ -1,0 +1,20 @@
+﻿<Window x:Class="HPlayer.UI.OBS_Stream_Setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HPlayer.UI"
+        xmlns:list_controls="clr-namespace:HPlayer.List_Controls"
+        mc:Ignorable="d"
+        Title="OBS_Stream_Setting" Height="390.318" Width="776.286">
+    <Grid Background="#FFB4B4B4">
+        <Viewbox Margin="0,0,243,0">
+            <Grid Background="Black"  Width="1920" Height="1080" >
+                <ScrollViewer x:Name="Output_Area" VerticalScrollBarVisibility="Disabled" UseLayoutRounding="False" Background="#00000000">
+                    <Grid x:Name="Stream_Output_Grid"/>
+                </ScrollViewer>
+            </Grid>
+        </Viewbox>
+        <list_controls:View_List x:Name="Plugin_List" Background="#FF686868" HorizontalAlignment="Right" Width="243"/>
+    </Grid>
+</Window>

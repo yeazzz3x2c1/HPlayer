@@ -1,0 +1,37 @@
+﻿<Window x:Class="HPlayer.UI.Member.Member_Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="會員註冊" Width="210.5" Icon="/HPlayer;component/Source/MyIcon.ico" WindowStyle="None" ResizeMode="NoResize" Margin="0" WindowStartupLocation="CenterScreen" AllowsTransparency="True" BorderThickness="2" BorderBrush="#FFDCDCDD" HorizontalAlignment="Left" VerticalAlignment="Top" Height="160.957" >
+    <Grid x:Name="main">
+        <Grid x:Name="PowerOffGrid" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Image x:Name="PowerOff" HorizontalAlignment="Right" Height="18" Margin="0,14,14,0" VerticalAlignment="Top" Width="18" Source="/HPlayer;component/Source/PowerOff.png" RenderTransformOrigin="0.5,0.5"/>
+        </Grid>
+        <StackPanel>
+            <StackPanel Margin="5,14,0,0" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock Text="註冊" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
+                <StackPanel Orientation="Horizontal"/>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top" Margin="5,14,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="帳號: "/>
+                    <TextBox x:Name="Account" Width="163" MaxLength="16"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="密碼: "/>
+                    <PasswordBox x:Name="Password" Width="163"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="確認密碼: "/>
+                    <PasswordBox x:Name="Confirm_Password" Width="139"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="電子郵件: "/>
+                    <TextBox x:Name="Email" Width="139"/>
+                </StackPanel>
+                <Button x:Name="Register" Background="#00DDDDDD" Margin="0,4,8,0" BorderBrush="#FFABADB3" Click="Register_Clicked">
+                    <TextBlock Text="確認註冊" Margin="0"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
