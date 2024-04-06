@@ -1,3 +1,5 @@
+![HPlayer](https://github.com/yeazzz3x2c1/HPlayer/assets/10571026/92f69309-876a-4edd-a505-dc23cc31a39a)
+
 # HPlayer
 A music player based on bass.dll, developed in C#.
 
