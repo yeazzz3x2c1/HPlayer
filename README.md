@@ -8,3 +8,8 @@ This project was developed when I was 16. It has been a long time since I last m
 I hope it can help people who are learning programming or similar skills.
 
 Discord: https://discord.gg/H44NWvtCda
+
+# Contact
+Author: Feng-Hao, Yeh
+
+Email: zzz3x2c1@gmail.com
